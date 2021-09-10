@@ -16,3 +16,13 @@ body {
   margin: 0;
   font-family: "Space Mono", monospace;
 }
+
+main {
+  border-radius: 20px 20px 0 0;
+  margin-top: rem(-16);
+  background-color: $white;
+}
+
+.container {
+  padding: 0 rem(32) 0 rem(32);
+}

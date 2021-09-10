@@ -15,12 +15,72 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+main {
+  border-radius: 20px 20px 0 0;
+  margin-top: -1rem;
+  background-color: white;
+}
+
+.container {
+  padding: 0 2rem 0 2rem;
+}
+
 header {
   background-color: #c5e4e7;
-  color: #00494d;
+  color: #5e7a7d;
   font-size: 1.5rem;
   font-weight: 700;
+  letter-spacing: 0.625rem;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.bill {
+  padding-top: 2rem;
+}
+.bill__heading {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #5e7a7d;
+}
+
+input,
+.input {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 3rem;
+  background-color: #f4fafa;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00494d;
+}
+input::-webkit-inner-spin-button,
+input ::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button,
+.input ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dollar {
+  position: relative;
+}
+.dollar input,
+.dollar .input {
+  padding-left: 35px;
+  padding-right: 15px;
+}
+.dollar::before {
+  content: "$";
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #7f9c9f;
 }
 
 .attribution {
