@@ -1,0 +1,20 @@
+// Mobile 375px, Desktop 1440px
+$breakpoints-up: (
+  "desktop": "376px",
+);
+
+$breakpoints-down: (
+  "mobile": "375px",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
