@@ -1,13 +1,3 @@
-.root {
-  --primary: hsl(172, 67%, 45%);
-  --cyan5: hsl(183, 100%, 15%);
-  --cyan4: hsl(186, 14%, 43%);
-  --cyan3: hsl(184, 14%, 56%);
-  --cyan2: hsl(185, 41%, 84%);
-  --cyan1: hsl(189, 41%, 97%);
-  --white: hsl(0, 0%, 100%);
-}
-
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -23,6 +13,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Space Mono", monospace;
+}
+
+header {
+  background-color: #c5e4e7;
+  color: #00494d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
 }
 
 .attribution {

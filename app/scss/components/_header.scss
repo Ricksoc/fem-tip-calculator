@@ -1,0 +1,10 @@
+@use "../util" as *;
+
+
+header {
+    background-color: $cyan2;
+    color: $cyan5;
+    font-size: rem(24);
+    font-weight: 700;
+    text-align: center;
+}
