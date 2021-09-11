@@ -1,7 +1,7 @@
 @use "../util" as *;
 
 .bill {
-  padding-top: rem(32);
+  padding-top: 32px;
 
   &__heading {
     margin-bottom: 8px;
