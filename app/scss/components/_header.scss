@@ -1,13 +1,8 @@
 @use "../util" as *;
 
-
 header {
-    background-color: $cyan2;
-    color: $cyan4;
-    font-size: rem(24);
-    font-weight: 700;
-    letter-spacing: rem(10);
-    text-align: center;
-    padding-top: rem(32);
-    padding-bottom: rem(48);
+  background-color: $cyan2;
+  text-align: center;
+  padding-top: rem(32);
+  padding-bottom: rem(43);
 }
