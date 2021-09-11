@@ -41,12 +41,10 @@ input,
     padding-right: 15px;
   }
   &::before {
-    content: "$";
+    content: url(../../../images/icon-dollar.svg);
     position: absolute;
     left: 16px;
     top: 50%;
-    transform: translateY(-50%);
-    font-size: rem(24);
-    color: $cyan3;
+    transform: translateY(-40%);
   }
 }

@@ -75,13 +75,11 @@ input ::-webkit-outer-spin-button,
   padding-right: 15px;
 }
 .dollar::before {
-  content: "$";
+  content: url(../../../images/icon-dollar.svg);
   position: absolute;
   left: 16px;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: #7f9c9f;
+  transform: translateY(-40%);
 }
 
 .attribution {
