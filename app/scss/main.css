@@ -22,7 +22,7 @@ main {
 }
 
 .container {
-  padding: 0 2rem 0 2rem;
+  padding: 0 32px 0 32px;
 }
 
 header {
@@ -33,7 +33,7 @@ header {
 }
 
 .bill {
-  padding-top: 2rem;
+  padding-top: 32px;
 }
 .bill__heading {
   margin-bottom: 8px;
@@ -71,7 +71,7 @@ input ::-webkit-outer-spin-button,
   padding-right: 15px;
 }
 .dollar::before {
-  content: url(../../../images/icon-dollar.svg);
+  content: url(../../images/icon-dollar.svg);
   position: absolute;
   left: 16px;
   top: 50%;
