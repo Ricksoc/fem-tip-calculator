@@ -1,6 +1,7 @@
 @use "../util" as *;
 
-.bill {
+.bill,
+.tip {
   padding-top: 32px;
 
   &__heading {
@@ -52,5 +53,13 @@ input,
     left: 16px;
     top: 50%;
     transform: translateY(-40%);
+  }
+}
+
+.tip {
+  &__input {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
   }
 }
