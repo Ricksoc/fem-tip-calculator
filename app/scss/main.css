@@ -131,6 +131,12 @@ input#custom_tip:-moz-placeholder,
   gap: 20px;
 }
 
+.people span {
+  display: block;
+  color: lightcoral;
+  display: none;
+}
+
 .person {
   position: relative;
 }
