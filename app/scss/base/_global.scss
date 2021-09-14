@@ -14,6 +14,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: $cyan2;
   font-family: "Space Mono", monospace;
 
   & input,
@@ -23,12 +24,24 @@ body {
   }
 }
 
-main {
-  border-radius: 20px 20px 0 0;
-  margin-top: -16px;
-  background-color: $white;
+.content {
+  max-width: 450px;
+  margin: 0 auto;
+
+  @include breakpoint-up(desktop) {
+    max-width: 1000px;
+  }
 }
 
 .container {
-  padding: 0 32px 0 32px;
+  padding: 0 32px 16px 32px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: -16px;
+  background-color: $white;
+
+  @include breakpoint-up(desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
 }

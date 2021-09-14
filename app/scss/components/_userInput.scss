@@ -89,15 +89,23 @@ input,
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 20px;
+
+    @include breakpoint-up(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 }
 
 .people {
-   span {
-     display: block;
-     color: lightcoral;
-     display: none;
-   }
+  span {
+    display: block;
+    color: lightcoral;
+    display: none;
+  }
+
+  @include breakpoint-up(desktop) {
+    margin-bottom: 32px;
+  }
 }
 
 .person {

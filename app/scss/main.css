@@ -12,6 +12,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background-color: #c5e4e7;
   font-family: "Space Mono", monospace;
 }
 body input,
@@ -20,14 +21,29 @@ body button {
   font-family: "Space Mono", monospace;
 }
 
-main {
-  border-radius: 20px 20px 0 0;
-  margin-top: -16px;
-  background-color: white;
+.content {
+  max-width: 450px;
+  margin: 0 auto;
+}
+@media (min-width: 920px) {
+  .content {
+    max-width: 1000px;
+  }
 }
 
 .container {
-  padding: 0 32px 0 32px;
+  padding: 0 32px 16px 32px;
+  border-radius: 20px 20px 20px 20px;
+  margin-top: -16px;
+  background-color: white;
+}
+@media (min-width: 920px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
 }
 
 header {
@@ -130,11 +146,21 @@ input#custom_tip:-moz-placeholder,
   grid-template-columns: repeat(2, 50%);
   gap: 20px;
 }
+@media (min-width: 920px) {
+  .tip__input {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 .people span {
   display: block;
   color: lightcoral;
   display: none;
+}
+@media (min-width: 920px) {
+  .people {
+    margin-bottom: 32px;
+  }
 }
 
 .person {
@@ -153,7 +179,7 @@ input#custom_tip:-moz-placeholder,
   transform: translateY(-40%);
 }
 
-.calculations {
+.output {
   margin-top: 24px;
   padding: 32px 16px 24px 16px;
   border-radius: 10px;
@@ -163,6 +189,11 @@ input#custom_tip:-moz-placeholder,
 .calculation {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+}
+@media (min-width: 920px) {
+  .calculation {
+    padding-top: 16px;
+  }
 }
 .calculation__text {
   margin-bottom: 16px;
@@ -180,11 +211,16 @@ input#custom_tip:-moz-placeholder,
   width: 100%;
   text-align: right;
   color: #26c0ab;
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 700;
 }
 .calculation__amount::before {
   content: "$";
+}
+@media (min-width: 920px) {
+  .calculation__button {
+    padding-top: 105px;
+  }
 }
 
 .attribution {
