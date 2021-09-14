@@ -1,1 +1,9 @@
 @use "../util/" as *;
+
+button, .button {
+    border: none;
+    border-radius: 5px;
+    height: rem(48);
+    font-size: rem(24);
+    font-weight: 700;
+}

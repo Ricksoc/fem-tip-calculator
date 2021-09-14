@@ -14,10 +14,15 @@ body {
   margin: 0;
   font-family: "Space Mono", monospace;
 }
+body input,
+body textarea,
+body button {
+  font-family: "Space Mono", monospace;
+}
 
 main {
   border-radius: 20px 20px 0 0;
-  margin-top: -1rem;
+  margin-top: -16px;
   background-color: white;
 }
 
@@ -99,4 +104,12 @@ input[type=number],
 }
 .attribution a {
   color: #3e52a3;
+}
+
+button, .button {
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
