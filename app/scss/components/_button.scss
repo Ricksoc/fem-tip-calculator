@@ -1,9 +1,28 @@
 @use "../util/" as *;
 
-button, .button {
-    border: none;
-    border-radius: 5px;
-    height: rem(48);
-    font-size: rem(24);
-    font-weight: 700;
+button,
+.button {
+  border: none;
+  border-radius: 5px;
+  height: rem(48);
+  font-size: rem(24);
+  font-weight: 700;
+
+  &__perc {
+    background-color: $cyan5;
+    color: $white;
+    &.clicked {
+      background-color: $primary;
+      color: $cyan5;
+    }
+  }
+
+  &__custom {
+    background-color: $cyan1;
+    color: $cyan4;
+
+    &.clicked {
+        border: 2px solid $primary;
+    }
+  }
 }

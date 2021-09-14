@@ -38,6 +38,14 @@ input,
   &[type="number"] {
     -moz-appearance: textfield; // Firefox
   }
+
+  &:focus {
+    outline-color: $primary;
+  }
+
+  &#custom_tip {
+    text-align: center;
+  }
 }
 
 .dollar {
@@ -60,6 +68,6 @@ input,
   &__input {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    gap: 10px;
+    gap: 20px;
   }
 }

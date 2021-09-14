@@ -75,6 +75,14 @@ input[type=number],
 .input[type=number] {
   -moz-appearance: textfield;
 }
+input:focus,
+.input:focus {
+  outline-color: #26c0ab;
+}
+input#custom_tip,
+.input#custom_tip {
+  text-align: center;
+}
 
 .dollar {
   position: relative;
@@ -95,7 +103,7 @@ input[type=number],
 .tip__input {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  gap: 10px;
+  gap: 20px;
 }
 
 .attribution {
@@ -106,10 +114,30 @@ input[type=number],
   color: #3e52a3;
 }
 
-button, .button {
+button,
+.button {
   border: none;
   border-radius: 5px;
   height: 3rem;
   font-size: 1.5rem;
   font-weight: 700;
+}
+button__perc,
+.button__perc {
+  background-color: #00494d;
+  color: white;
+}
+button__perc.clicked,
+.button__perc.clicked {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+button__custom,
+.button__custom {
+  background-color: #f4fafa;
+  color: #5e7a7d;
+}
+button__custom.clicked,
+.button__custom.clicked {
+  border: 2px solid #26c0ab;
 }/*# sourceMappingURL=main.css.map */
