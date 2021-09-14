@@ -153,6 +153,35 @@ input#custom_tip:-moz-placeholder,
   transform: translateY(-40%);
 }
 
+.calculations {
+  padding: 32px 16px 0 16px;
+  border-radius: 10px;
+  background-color: #00494d;
+}
+
+.calculation {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.calculation__text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+.calculation__text p {
+  color: #7f9c9f;
+}
+.calculation__amount {
+  width: 100%;
+  text-align: right;
+  color: #26c0ab;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.calculation__amount::before {
+  content: "$";
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

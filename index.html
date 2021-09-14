@@ -49,22 +49,24 @@
         <div class="tip">
           <div class="tip__heading">Select Tip %</div>
           <div class="tip__input">
-            <button class="button button__perc ">5%</button>
+            <button class="button button__perc">5%</button>
             <button class="button button__perc">10%</button>
             <button class="button button__perc">15%</button>
             <button class="button button__perc">20%</button>
             <button class="button button__perc">50%</button>
             <input
-            class="input"
-            type="number"
-            name="custom_tip"
-            id="custom_tip"
-            placeholder="Custom"
-          />
+              class="input"
+              type="number"
+              name="custom_tip"
+              id="custom_tip"
+              placeholder="Custom"
+            />
           </div>
         </div>
         <div class="people">
-          <div class="people__heading">Number of People <span>Can't be zero</span></div>
+          <div class="people__heading">
+            Number of People <span>Can't be zero</span>
+          </div>
           <div class="people__input person">
             <input
               class="input"
@@ -75,8 +77,24 @@
           </div>
         </div>
       </section>
-
-    Tip Amount / person Total / person Reset
+      <section class="output">
+        <div class="calculations">
+          <div class="calculation">
+            <div class="calculation__text">
+              Tip Amount
+              <p>/ person</p>
+            </div>
+            <div class="calculation__amount" id="tip_per_person">4.27</div>
+          </div>
+          <div class="calculation">
+            <div class="calculation__text">
+              Tip Amount
+              <p>/ person</p>
+            </div>
+            <div class="calculation__amount" id="total_per_person">0</div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <div class="attribution">
