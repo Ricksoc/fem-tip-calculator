@@ -42,25 +42,27 @@ input,
 
   &:focus {
     outline-color: $primary;
+    outline-style: solid;
   }
 
   &#custom_tip {
     text-align: right;
     padding: rem(20);
-
-    &::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
+    &::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
       color: $cyan4;
-      opacity: 1; /* Firefox */
     }
-
+    &::-moz-placeholder {
+      /* Firefox 19+ */
+      color: $cyan4;
+      opacity: 1;
+    }
     &:-ms-input-placeholder {
-      /* Internet Explorer 10-11 */
+      /* IE 10+ */
       color: $cyan4;
     }
-
-    &::-ms-input-placeholder {
-      /* Microsoft Edge */
+    &:-moz-placeholder {
+      /* Firefox 18- */
       color: $cyan4;
     }
   }

@@ -80,39 +80,32 @@ input[type=number],
 input:focus,
 .input:focus {
   outline-color: #26c0ab;
+  outline-style: solid;
 }
 input#custom_tip,
 .input#custom_tip {
   text-align: right;
   padding: 1.25rem;
 }
-input#custom_tip::-moz-placeholder, .input#custom_tip::-moz-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
+input#custom_tip::-webkit-input-placeholder,
+.input#custom_tip::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
   color: #5e7a7d;
-  opacity: 1;
-  /* Firefox */
 }
-input#custom_tip:-ms-input-placeholder, .input#custom_tip:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
+input#custom_tip::-moz-placeholder,
+.input#custom_tip::-moz-placeholder {
+  /* Firefox 19+ */
   color: #5e7a7d;
   opacity: 1;
-  /* Firefox */
-}
-input#custom_tip::placeholder,
-.input#custom_tip::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #5e7a7d;
-  opacity: 1;
-  /* Firefox */
 }
 input#custom_tip:-ms-input-placeholder,
 .input#custom_tip:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
+  /* IE 10+ */
   color: #5e7a7d;
 }
-input#custom_tip::-ms-input-placeholder,
-.input#custom_tip::-ms-input-placeholder {
-  /* Microsoft Edge */
+input#custom_tip:-moz-placeholder,
+.input#custom_tip:-moz-placeholder {
+  /* Firefox 18- */
   color: #5e7a7d;
 }
 
