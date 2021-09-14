@@ -154,7 +154,8 @@ input#custom_tip:-moz-placeholder,
 }
 
 .calculations {
-  padding: 32px 16px 0 16px;
+  margin-top: 24px;
+  padding: 32px 16px 24px 16px;
   border-radius: 10px;
   background-color: #00494d;
 }
@@ -164,18 +165,22 @@ input#custom_tip:-moz-placeholder,
   grid-template-columns: repeat(2, 50%);
 }
 .calculation__text {
+  margin-bottom: 16px;
   font-size: 1rem;
   font-weight: 700;
   color: white;
 }
 .calculation__text p {
+  margin-top: 3px;
+  font-size: 0.75rem;
+  font-weight: 700;
   color: #7f9c9f;
 }
 .calculation__amount {
   width: 100%;
   text-align: right;
   color: #26c0ab;
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 .calculation__amount::before {
@@ -208,12 +213,11 @@ button__perc.clicked,
   background-color: #26c0ab;
   color: #00494d;
 }
-button__custom,
-.button__custom {
-  background-color: #f4fafa;
-  color: #5e7a7d;
-}
-button__custom.clicked,
-.button__custom.clicked {
-  border: 2px solid #26c0ab;
+button__reset,
+.button__reset {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #26c0ab;
+  color: #00494d;
 }/*# sourceMappingURL=main.css.map */
