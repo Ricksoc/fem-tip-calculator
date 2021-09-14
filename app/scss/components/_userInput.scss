@@ -1,7 +1,8 @@
 @use "../util" as *;
 
 .bill,
-.tip {
+.tip,
+.people {
   padding-top: 32px;
 
   &__heading {
@@ -44,7 +45,24 @@ input,
   }
 
   &#custom_tip {
-    text-align: center;
+    text-align: right;
+    padding: rem(20);
+
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $cyan4;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $cyan4;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $cyan4;
+    }
   }
 }
 
@@ -69,5 +87,21 @@ input,
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 20px;
+  }
+}
+
+.person {
+  position: relative;
+  & input,
+  .input {
+    padding-left: 35px;
+    padding-right: 15px;
+  }
+  &::before {
+    content: url(../../images/icon-person.svg);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-40%);
   }
 }

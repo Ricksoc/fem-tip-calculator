@@ -38,11 +38,13 @@ header {
 }
 
 .bill,
-.tip {
+.tip,
+.people {
   padding-top: 32px;
 }
 .bill__heading,
-.tip__heading {
+.tip__heading,
+.people__heading {
   margin-bottom: 8px;
   font-size: 1rem;
   font-weight: 700;
@@ -81,7 +83,37 @@ input:focus,
 }
 input#custom_tip,
 .input#custom_tip {
-  text-align: center;
+  text-align: right;
+  padding: 1.25rem;
+}
+input#custom_tip::-moz-placeholder, .input#custom_tip::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5e7a7d;
+  opacity: 1;
+  /* Firefox */
+}
+input#custom_tip:-ms-input-placeholder, .input#custom_tip:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5e7a7d;
+  opacity: 1;
+  /* Firefox */
+}
+input#custom_tip::placeholder,
+.input#custom_tip::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5e7a7d;
+  opacity: 1;
+  /* Firefox */
+}
+input#custom_tip:-ms-input-placeholder,
+.input#custom_tip:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #5e7a7d;
+}
+input#custom_tip::-ms-input-placeholder,
+.input#custom_tip::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #5e7a7d;
 }
 
 .dollar {
@@ -104,6 +136,22 @@ input#custom_tip,
   display: grid;
   grid-template-columns: repeat(2, 50%);
   gap: 20px;
+}
+
+.person {
+  position: relative;
+}
+.person input,
+.person .input {
+  padding-left: 35px;
+  padding-right: 15px;
+}
+.person::before {
+  content: url(../../images/icon-person.svg);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-40%);
 }
 
 .attribution {
