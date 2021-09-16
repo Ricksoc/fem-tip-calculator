@@ -20,14 +20,12 @@ const zeroPeople = document.querySelector("#zero_people");
 
 billAmount.addEventListener("keyup", (e) => {
   bill = parseFloat(billAmount.value);
-  console.log(bill);
 
-  // updateBill
+  updateBill(bill, tip, people);
 });
 
 noPeople.addEventListener("keyup", (e) => {
   people = parseInt(noPeople.value);
-  console.log(people);
 
   if (people >= 1) {
     zeroPeople.classList.add("hidden");
@@ -35,5 +33,46 @@ noPeople.addEventListener("keyup", (e) => {
     zeroPeople.classList.remove("hidden");
   }
 
-  // updateBill
+  updateBill(bill, tip, people);
 });
+
+percs.forEach((obj, index) => {
+  obj.addEventListener("click", (e) => {
+    percs.forEach((obj, ind) => {
+      if (index !== ind) {
+        obj.classList.remove("clicked");
+      }
+    });
+    obj.classList.add("clicked");
+    tip = parseInt(obj.value) / 100;
+
+    updateBill(bill, tip, people);
+  });
+});
+
+customTip.addEventListener("click", (e) => {
+  tip = 0;
+  percs.forEach((obj) => {
+    obj.classList.remove("clicked");
+  });
+
+  updateBill(bill, tip, people);
+});
+
+customTip.addEventListener("keyup", (e) => {
+  tip = parseFloat(customTip.value) / 100;
+
+  updateBill(bill, tip, people);
+});
+
+function updateBill(bill, tip, people) {
+  if (people >= 1 && tip >= 0) {
+    const billEach = (bill + bill * tip) / people;
+    const tipEach = (bill * tip) / people;
+
+    tipPerPerson.textContent = tipEach;
+    totalPerPerson.textContent = billEach;
+
+    console.table(bill, tip, people, billEach, tipEach);
+  }
+}

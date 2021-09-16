@@ -53,11 +53,11 @@
               <div class="tip">
                 <div class="tip__heading">Select Tip %</div>
                 <div class="tip__input">
-                  <button class="button button__perc">5%</button>
-                  <button class="button button__perc">10%</button>
-                  <button class="button button__perc">15%</button>
-                  <button class="button button__perc">20%</button>
-                  <button class="button button__perc">50%</button>
+                  <button class="button button__perc" value="5">5%</button>
+                  <button class="button button__perc" value="10">10%</button>
+                  <button class="button button__perc" value="15">15%</button>
+                  <button class="button button__perc" value="20">20%</button>
+                  <button class="button button__perc" value="50">50%</button>
                   <input
                     class="input"
                     type="number"
@@ -70,7 +70,7 @@
               <div class="people">
                 <div class="people__heading">
                   Number of People
-                  <span class="hidden" id="zero_people">Can't be zero</span>
+                  <span id="zero_people">Can't be zero</span>
                 </div>
                 <div class="people__input person">
                   <input
@@ -101,7 +101,7 @@
                 <div class="calculation__amount" id="total_per_person">0</div>
               </div>
               <div class="calculation__button">
-                <button class="button button__reset">RESET</button>
+                <button class="button button__reset" id="reset">RESET</button>
               </div>
             </div>
           </section>
