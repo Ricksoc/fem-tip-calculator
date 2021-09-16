@@ -260,6 +260,14 @@ button__reset,
   display: block;
   margin: 0 auto;
   width: 100%;
+}
+button.unpressed,
+.button.unpressed {
   background-color: #26c0ab;
+  color: #00494d;
+}
+button.pressed,
+.button.pressed {
+  background-color: #c5e4e7;
   color: #00494d;
 }/*# sourceMappingURL=main.css.map */

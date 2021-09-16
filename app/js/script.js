@@ -15,6 +15,7 @@ const noPeople = document.querySelector("#people_amount");
 const tipPerPerson = document.querySelector("#tip_per_person");
 const totalPerPerson = document.querySelector("#total_per_person");
 const zeroPeople = document.querySelector("#zero_people");
+const reset = document.querySelector("#reset");
 
 // Add event listeners
 
@@ -63,6 +64,33 @@ customTip.addEventListener("keyup", (e) => {
   tip = parseFloat(customTip.value) / 100;
 
   updateBill(bill, tip, people);
+});
+
+reset.addEventListener("click", (e) => {
+  reset.classList.remove("unpressed");
+  reset.classList.add("pressed");
+
+  setTimeout(() => {
+    reset.classList.remove("pressed");
+    reset.classList.add("unpressed");
+
+    bill = 0;
+    tip = 0;
+    people = 0;
+
+    billAmount.value = "";
+    customTip.value = "";
+    noPeople.value = "";
+
+    percs.forEach((obj) => {
+      obj.classList.remove("clicked");
+    });
+
+    tipPerPerson.textContent = 0;
+    totalPerPerson.textContent = 0;
+
+    zeroPeople.classList.remove("hidden");
+  }, 100);
 });
 
 function updateBill(bill, tip, people) {
