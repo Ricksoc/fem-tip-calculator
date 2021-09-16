@@ -28,8 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Completed tip calculator desktop view](.images/screenshot.png)
-
+![Completed tip calculator desktop view](./images/screenshot.png)
 
 ### Links
 
@@ -47,7 +46,7 @@ I completed this project without assistance from any code alongs or videos, rely
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- Vanilla JSe are just examples. Delete this note and replace the list above with your own choices**
+- Vanilla JSe are just examples. Delete this note and replace the list above with your own choices\*\*
 
 ### What I learned
 
@@ -60,7 +59,7 @@ Some specific things I learned from this project:
 - how to remove spinner buttons from number input fields
 - positioning an image within an input field :
 
-.dollar {
+````.dollar {
   position: relative;
   & input,
   .input {
@@ -74,8 +73,9 @@ Some specific things I learned from this project:
     top: 50%;
     transform: translateY(-40%);
   }
-}
+}```
 
 ### Continued development
 
 I will completed a few more challenges along these but then intend to start practicing using REACT.
+````
