@@ -44,6 +44,7 @@
                   <input
                     class="input"
                     type="number"
+                    placeholder="0"
                     name="bill_amount"
                     id="bill_amount"
                   />
@@ -68,12 +69,14 @@
               </div>
               <div class="people">
                 <div class="people__heading">
-                  Number of People <span>Can't be zero</span>
+                  Number of People
+                  <span class="hidden" id="zero_people">Can't be zero</span>
                 </div>
                 <div class="people__input person">
                   <input
                     class="input"
                     type="number"
+                    placeholder="0"
                     name="people_amount"
                     id="people_amount"
                   />

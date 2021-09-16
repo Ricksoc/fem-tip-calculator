@@ -14,10 +14,26 @@ const customTip = document.querySelector("#custom_tip");
 const noPeople = document.querySelector("#people_amount");
 const tipPerPerson = document.querySelector("#tip_per_person");
 const totalPerPerson = document.querySelector("#total_per_person");
+const zeroPeople = document.querySelector("#zero_people");
 
 // Add event listeners
 
 billAmount.addEventListener("keyup", (e) => {
-  bill = billAmount.value;
+  bill = parseFloat(billAmount.value);
   console.log(bill);
+
+  // updateBill
+});
+
+noPeople.addEventListener("keyup", (e) => {
+  people = parseInt(noPeople.value);
+  console.log(people);
+
+  if (people >= 1) {
+    zeroPeople.classList.add("hidden");
+  } else {
+    zeroPeople.classList.remove("hidden");
+  }
+
+  // updateBill
 });

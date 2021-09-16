@@ -97,10 +97,12 @@ input,
 }
 
 .people {
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
   span {
-    display: block;
     color: lightcoral;
-    display: none;
   }
 
   @include breakpoint-up(desktop) {

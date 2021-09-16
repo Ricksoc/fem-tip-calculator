@@ -46,6 +46,10 @@ body button {
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 header {
   background-color: #c5e4e7;
   text-align: center;
@@ -152,10 +156,12 @@ input#custom_tip:-moz-placeholder,
   }
 }
 
+.people__heading {
+  display: flex;
+  justify-content: space-between;
+}
 .people span {
-  display: block;
   color: lightcoral;
-  display: none;
 }
 @media (min-width: 920px) {
   .people {
