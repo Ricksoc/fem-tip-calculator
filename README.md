@@ -59,7 +59,8 @@ Some specific things I learned from this project:
 - how to remove spinner buttons from number input fields
 - positioning an image within an input field :
 
-`.dollar {
+```
+.dollar {
   position: relative;
   & input,
   .input {
@@ -73,7 +74,8 @@ Some specific things I learned from this project:
     top: 50%;
     transform: translateY(-40%);
   }
-}`
+}
+```
 
 ### Continued development
 
