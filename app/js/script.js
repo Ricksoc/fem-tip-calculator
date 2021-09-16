@@ -98,8 +98,8 @@ function updateBill(bill, tip, people) {
     const billEach = (bill + bill * tip) / people;
     const tipEach = (bill * tip) / people;
 
-    tipPerPerson.textContent = tipEach;
-    totalPerPerson.textContent = billEach;
+    tipPerPerson.textContent = tipEach.toFixed(2);
+    totalPerPerson.textContent = billEach.toFixed(2);
 
     console.table(bill, tip, people, billEach, tipEach);
   }
